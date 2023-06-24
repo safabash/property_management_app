@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 
 import 'internationalization/internationalization.dart';
 
+import 'router/router.dart';
 import 'screens/authentication/login/scren_login.dart';
 
 void main() {
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ), // set property
+      getPages: listRoutes,
       home: const ScreenLoginPage(),
     );
   }
